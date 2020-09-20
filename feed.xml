@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog do Indião</title>
+    <description>Um lugar para escruvinhar uns trem</description>
+    <link>https://oindiao.github.io//</link>
+    <atom:link href="https://oindiao.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 20 Sep 2020 14:44:12 -0300</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2020 14:44:12 -0300</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
