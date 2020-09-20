@@ -1,0 +1,29 @@
+# Site settings
+title: Blog do Indião
+email: rafael.ferper@gmail.com
+description: Um lugar para escruvinhar uns trem
+baseurl: ""
+url: "https://oindiao.github.io/"
+
+author:
+  name : 'Rafael Fernandes Pereira'
+  email : rafael.ferper@gmail.com
+  url : https://oindiao.github.io/
+  instagram : https://instagram.com/o.indiao
+  linkedin : https://www.linkedin.com/in/oindiao/
+  github : https://github.com/oindiao
+  medium : https://medium.com/@oindiao
+
+
+
+paginate: 5
+comments: false
+paginate_path: "/page/:num"
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
