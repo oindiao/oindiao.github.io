@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Clownmedia - Piscina no planalto"
+title:  "Clownmédia - Piscina no planalto"
 date:   2020-04-24 23:58:47 -0300
 categories: comedia
 ---
