@@ -17,7 +17,7 @@ Michelzinho Temer, filho de Michel Temer, dá um soco nas costelas do pai e diz:
 
 _ Paaaai, tinha uma piscina olímpica e nunca me levou lá? Tô triste com isso, meus amigos da escolas iam pirar!
 
-Temer responde:
+**Temer** responde:
 
 _ Meu filho, eu não sei onde se encontra tal artefato nas instalações de nossa antiga casa.
 
@@ -31,11 +31,11 @@ Dilma, ao ver a ligação, fica imaginando "será que o filho da puta vai declam
 
 **Dilma:** _ Não sabia que na Transilvania tinha celular e que dava para fazer ligação internacional.
 
-Temer (que não entendeu a piada): _ Ah não, estou em São Paulo. Olha só, vc está vendo o discurso do Jair?
+**Temer** (que não entendeu a piada): _ Ah não, estou em São Paulo. Olha só, vc está vendo o discurso do Jair?
 
 **Dilma:** _ Sim e vcs me sacaneando sobre a saudação da mandioca. Ele tá no jardim de infância?!
 
-Temer (que não entendeu a piada de novo): _ Não, ele é ex-capitão do mat... exército, então já passou dessa época. 
+**Temer** (que não entendeu a piada de novo): _ Não, ele é ex-capitão do mat... exército, então já passou dessa época. 
 
 **Dilma:** _ O que vc quer?
 
@@ -71,7 +71,7 @@ Ficaram 13 minutos conversando sobre PT, sindicatos, cruzado de esquerda, golpe 
 
 **Lula:** _ Sim, mas ele está a nossa direita, mas na esquerda.
 
-A ligação caiu, pois Dilma desmaiou de tanto pensar nesse paradoxo: direita na esquerda?
+A ligação caiu, pois Dilma desmaiou de tanto pensar nesse paradoxo: *direita na esquerda?*
 
 Lula acha estranho a queda da ligação, tenta falar com a companheira mas sem sucesso. Então liga para o novo companheiro.
 
@@ -81,15 +81,15 @@ Lula acha estranho a queda da ligação, tenta falar com a companheira mas sem s
 
 **Lula:** _ Ah, eu já estou acostumado a estar preso...
 
-FHC, constrangido por ter esquecido disso: _ Hahaha... é... rs... Bom, o que vc deseja?
+**FHC**, constrangido por ter esquecido disso: _ Hahaha... é... rs... Bom, o que vc deseja?
 
-**Lula:** _ Então companheiro, eu gostaria de saber onde que fica a tal piscina olímpica que esse [13 "elogios" aqui] falou.
+**Lula:** _ Então companheiro, eu gostaria de saber onde que fica a tal piscina olímpica que esse [*13 "elogios" aqui*] falou.
 
 **FHC:** _ Já vi discursos da pré escola serem mais eloquentes, mas não falo nada pq tenho medo de me engavetarem.
 
 **Lula:** _ Você com medo de engavetamento? 
 
-FHC (constrangido): _ Hahaha... Mas então, eu não lembro dessa piscina, o que eu lembro foi que trocaram o aquecimento, de energia elétrica para solar.
+**FHC** (constrangido, de novo): _ Hahaha... Mas então, eu não lembro dessa piscina, o que eu lembro foi que trocaram o aquecimento, de energia elétrica para solar.
 
 **Lula:** _ Sério? Então nem gastava dinheiro com energia elétrica?
 
