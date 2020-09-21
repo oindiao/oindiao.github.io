@@ -54,14 +54,14 @@ Eu estou buscando o caminho mais fácil: pegar o que já conheço e ir agregando
 Listinha do que eu li e vi:
 
 * Livros do **Maurício Aniche**:
-    * [Test-Driven Development: Teste e Design no Mundo Real](https://www.casadocodigo.com.br/products/livro-tdd "Test-Driven Development: Teste e Design no Mundo Real")
-    * [Testes automatizados de software: Um guia prático](https://www.casadocodigo.com.br/products/livro-testes-de-software "Testes automatizados de software: Um guia prático")
-    * [Software Testing: From Theory to Practice](https://sttp.site/ "Software Testing: From Theory to Practice")
+    * [Test-Driven Development: Teste e Design no Mundo Real](https://www.casadocodigo.com.br/products/livro-tdd "Test-Driven Development: Teste e Design no Mundo Real"){:target="_blank"}
+    * [Testes automatizados de software: Um guia prático](https://www.casadocodigo.com.br/products/livro-testes-de-software "Testes automatizados de software: Um guia prático"){:target="_blank"}
+    * [Software Testing: From Theory to Practice](https://sttp.site/ "Software Testing: From Theory to Practice"){:target="_blank"}
 * Curso na Udemy:
-    * [Testes unitários em JAVA: Domine JUnit, Mockito e TDD](https://www.udemy.com/course/testes-unitarios-em-java/ "Testes unitários em JAVA: Domine JUnit, Mockito e TDD")
+    * [Testes unitários em JAVA: Domine JUnit, Mockito e TDD](https://www.udemy.com/course/testes-unitarios-em-java/ "Testes unitários em JAVA: Domine JUnit, Mockito e TDD"){:target="_blank"}
 * Cursos do Júlio de Lima:
-    * [Descomplicando testes de API Rest.](https://hotmart.com/product/descomplicando-testes-de-api-rest "Descomplicando testes de API Rest.")
-    * [Treinamento de Testes de Software para Iniciantes](https://hotmart.com/product/treinamento-de-testes-de-software-para-iniciantes "Treinamento de Testes de Software para Iniciantes")
+    * [Descomplicando testes de API Rest.](https://hotmart.com/product/descomplicando-testes-de-api-rest "Descomplicando testes de API Rest."){:target="_blank"}
+    * [Treinamento de Testes de Software para Iniciantes](https://hotmart.com/product/treinamento-de-testes-de-software-para-iniciantes "Treinamento de Testes de Software para Iniciantes"){:target="_blank"}
 
 Conclusão
 ---------

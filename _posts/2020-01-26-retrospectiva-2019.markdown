@@ -56,21 +56,21 @@ Depois disso, no outro cliente, passei a prestar mais atenção nesse tipo de ac
 3) Vá à eventos, workshops, meetup, etc.
 ----------------------------------------
 
-Comecei a ler um livro chamado "Introdução à Arquitetura e Design de Software", dos donos da Caelum / Alura / Casa do código / Hipsters.tech [Introdução à Arquitetura e Design de Software](https://www.casadocodigo.com.br/products/livro-arquitetura-java "Introdução à Arquitetura e Design de Software")
+Comecei a ler um livro chamado "Introdução à Arquitetura e Design de Software", dos donos da Caelum / Alura / Casa do código / Hipsters.tech [Introdução à Arquitetura e Design de Software](https://www.casadocodigo.com.br/products/livro-arquitetura-java "Introdução à Arquitetura e Design de Software"){:target="_blank"}
 
 Aliás, excelente livro para todo mundo. Maior parte do livro é sobre arquitetura de software, então serve para os profissionais de programação.
 
-Pois então. Comecei a ler o livro e vi que tinha um curso na Caelum sobre arquitetura de software [CURSO PRÁTICAS DE DESIGN E ARQUITETURA DE CÓDIGO PARA APLICAÇÕES JAVA ONLINE](https://www.caelum.com.br/curso-design-arquitetura-de-aplicacoes-java "CURSO PRÁTICAS DE DESIGN E ARQUITETURA DE CÓDIGO PARA APLICAÇÕES JAVA ONLINE") e resolvi fazer. Todo pimpão e pensando "como eu já sei muito, sou bichão, não vai ser tão bom assim."
+Pois então. Comecei a ler o livro e vi que tinha um curso na Caelum sobre arquitetura de software [CURSO PRÁTICAS DE DESIGN E ARQUITETURA DE CÓDIGO PARA APLICAÇÕES JAVA ONLINE](https://www.caelum.com.br/curso-design-arquitetura-de-aplicacoes-java "CURSO PRÁTICAS DE DESIGN E ARQUITETURA DE CÓDIGO PARA APLICAÇÕES JAVA ONLINE"){:target="_blank"} e resolvi fazer. Todo pimpão e pensando "como eu já sei muito, sou bichão, não vai ser tão bom assim."
 
 O curso era aos sábados e, após o primeiro dia de curso, fiquei o domingo em posição fetal e pensando "sou mt inocente". Havia MUITO assunto que eu não sabia que existia. Ferramentas, técnicas, termos. A partir dali decidi que, além de estudar mais, devia começar a ir à outros eventos.
 
 Além de aumentar a rede de conhecidos (o tal do networking), ir à eventos, workshops e meetups faz com que sua visão aumente e veja ali soluções para seus problemas no trabalho. Por mais tempo que seja um evento, uma frase, uma palestra, um único momento, pode valer a pena.
 
-Com isso, desde setembro vou à um evento chamado [Agile Talks ABC](https://www.meetup.com/pt-BR/Agile-Talks-ABC/ "Agile Talks ABC"). É um evento de agile? Sim! É um evento que vc sai com vontade de abraças árvores? Não! Discussões saudáveis, onde prevalesce o respeito e a escuta pelo outro. Onde sua opinião pode mudar drasticamente de um determinado assunto. Onde suas palavras são ouvidas por todos. E, desde o primeiro, não faltei a nenhum. Mesmo que, ultimamente, não tenho mais considerado tirar certificação de Scrum Master, mas gosto de ir para ouvir o que outros profissionais da área e que são Scrum Master, ou envolvidos, têm a dizer sobre agile. E também de ir fazer perguntas cabeludas para gerar as discussões saudáveis.
+Com isso, desde setembro vou à um evento chamado [Agile Talks ABC](https://www.meetup.com/pt-BR/Agile-Talks-ABC/ "Agile Talks ABC"){:target="_blank"}. É um evento de agile? Sim! É um evento que vc sai com vontade de abraças árvores? Não! Discussões saudáveis, onde prevalesce o respeito e a escuta pelo outro. Onde sua opinião pode mudar drasticamente de um determinado assunto. Onde suas palavras são ouvidas por todos. E, desde o primeiro, não faltei a nenhum. Mesmo que, ultimamente, não tenho mais considerado tirar certificação de Scrum Master, mas gosto de ir para ouvir o que outros profissionais da área e que são Scrum Master, ou envolvidos, têm a dizer sobre agile. E também de ir fazer perguntas cabeludas para gerar as discussões saudáveis.
 
 ![Um roda de pessoas sentadas em volta de mesas, na orde da esqueda para direita: uma mulher de cabelos longos e negros usando óculos e jaqueta de couro azul escuro, uma mulher de cabelos loiros e presos com camisa listrada em preto em branco, homem de cabelo curto e escuro com camiseta preta com mangas douradas, homem de óculos com cabelos curtos e camiseta azul escuro, homem de cabelos loiros e curtos com camiseta amarela, homem de cabelos loiros e curtos com camiseta branca e mangas pretas, homem usando óculos de cabelos escuros e meio longos com camiseta cinza escura, homem de cabelos escuros e curtos com camiseta preta, homem de cabelos castanhos e curtos com camiseta cinza, homem de cabelos escuros e curtos com camiseta cinza clara. Todos estão em volta de mesas, com várias canetas e post'its". Uma placa em uma porta de vidro escrito: "Bem-vindos ao AGILE ABC Talks"](/images/2020-01-26/02.jpeg)
 
-[Mais fotos](https://www.meetup.com/pt-BR/Agile-Talks-ABC/photos/30350587/ "Fotos do evento")
+[Mais fotos](https://www.meetup.com/pt-BR/Agile-Talks-ABC/photos/30350587/ "Fotos do evento"){:target="_blank"}
 
 E ir à eventos e afins, me deu uma ideia de ir a outros eventos que não são parte do meu dia a dia  do trabalho.
 
@@ -85,4 +85,4 @@ Então vá fazer curso de clown, culinária, oratória, bordado, etc. Uma frase,
 
 ![Logo da Casa do humor, escrito "casa do humor" logo abaixo "improviso, palhaço, standup e o que for](/images/2020-01-26/03.jpg)
 
-[Um dos cursos que me mudou profundamente](https://www.casadohumor.com.br/palhaco "Casa do humor")
+[Um dos cursos que me mudou profundamente](https://www.casadohumor.com.br/palhaco "Casa do humor"){:target="_blank"}

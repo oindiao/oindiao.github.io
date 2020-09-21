@@ -17,11 +17,11 @@ Se abrirmos esse link do exemplo, veremos:
 
 ![Conteúdo da página /v3/api-docs](/images/2020-09-14/03.png)
 
-Esta conteúdo no formato Json contém toda a documentação do Swagger. Essa documentação segue um padrão, o [Open API](://www.openapis.org/ "Open API") e, assim, as ferramentas que fazem requisições em API Rest conseguem importar, sem problema algum.
+Esta conteúdo no formato Json contém toda a documentação do Swagger. Essa documentação segue um padrão, o [Open API](https://www.openapis.org/ "Open API"){:target="_blank"} e, assim, as ferramentas que fazem requisições em API Rest conseguem importar, sem problema algum.
 
-Para API de exemplo, usarei uma API desenvolvida para o curso de *DTAR*, [Descomplicando testes de API Rest.](https://hotmart.com/product/descomplicando-testes-de-api-rest "Descomplicando testes de API Rest."), ministradas pelo Antonio Montanha e Júlio de Lima, que se encontra no repositório do GitHub abaixo:
+Para API de exemplo, usarei uma API desenvolvida para o curso de *DTAR*, [Descomplicando testes de API Rest.](https://hotmart.com/product/descomplicando-testes-de-api-rest "Descomplicando testes de API Rest."){:target="_blank"}, ministradas pelo Antonio Montanha e Júlio de Lima, que se encontra no repositório do GitHub abaixo:
 
-[Gerenciador Viagem](https://github.com/AntonioMontanha/gerenciador-viagens "Gerenciador Viagem")
+[Gerenciador Viagem](https://github.com/AntonioMontanha/gerenciador-viagens "Gerenciador Viagem"){:target="_blank"}
 
 Usando o Postman como exemplo, vamos fazer a importação.
 Na tela de ***Import*** (***File -> Import*** ou na tela mesmo, que tem um botão ***Import***), clicar na aba Link:
@@ -45,4 +45,4 @@ Agora clique em ***Import***. Assim, todo esquema é importado.
 Pronto. Sua vida facilidade ao realizar requisições e testes em APIs Rest.
 Como falado, esse exemplo foi usando Postman, mas outros programas também possuem essa funcionalidade. 
 
-Dê uma procurada no [Google](https://wwww.google.com.br "Google") como fazer essa importação para sua ferramenta favorita.
+Dê uma procurada no [Google](https://wwww.google.com.br "Google"){:target="_blank"} como fazer essa importação para sua ferramenta favorita.

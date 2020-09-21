@@ -1,18 +1,14 @@
 ---
 layout: post
-title:  "C# vs Java: Enum"
+title:  "Java: Enum, uma das coisas mais legais que tem"
 date:   2019-10-16 06:00:00 -0300
 categories: programação
 ---
 
-> *"[...] pessoas de todo o mundo estão constantemente criando aplicações Web usando .NET, Java e PHP. Nenhuma delas está falhando por causa da escolha da tecnologia [...]"*
-(Joel Spolsky. Language wars. 2006.)
+Enum facilita bastante a vida. Principalmente no Java, onde enum é um tipo de classe bem flexível e extensível.
 
-
-A citação acima é para mim, de longe, a melhor definição de que **não existe melhor linguagem**. O que existe são diferenças entre elas e é sobre isso que irei escrever ao decorrer de diversos posts. Mas este será espcificamente sobre **ENUM**.
-
-Enum
-----
+O que é um Enum?
+----------------
 
 Enum é a representação de uma lista de valores constantes e pré definidos.
 
@@ -52,22 +48,58 @@ A saída será:
 
 Um Enum pode ser utilizado para diversas tarefas, principalmente quando queremos dar nomes mais amigáveis em valores pré-definidos de forma mais simples, como os dias da semana.
 
-Enum facilita bastante a vida. Principalmente no Java, onde enum é um tipo de classe bem flexível e extensível. E pensei que a mesma facilidade eu iria encontrar no C#. Aí me enganei.
 
-O que eu queria resolver
-------------------------
+Só isso? Aff…
+-------------
 
-Entrei em um projeto feito em C# e eu deveria criar duas funcionalidades:
+No Java dá para fazer uma coisa bem interessante:
 
-1. Um método que teria como entrada o tipo de pedido e retornaria uma lista dos pedidos;
-2. Um método que iria retornar a quantidade de pedido por tipo de pedido.
+> Cada valor do enum pode ter um construtor… do próprio enum!
 
-O que eu planejei pensando que era igual Java
----------------------------------------------
+Enum não deixa de ser uma classe como outra qualquer no java, logo podemos ter construtores no enum.
+Exemplo: o Enum de dias da semana poderia ter um construtor que recebe um String, sendo ela o nome traduzido para nosso dialeto:
 
-A partir de agora vou usar exemplos e o código será didático, sem usar teste unitário, mock de dados, tabela, etc. A intenção é de mostrar as dificuldades que tive e não de desenvolver um sistema.
+{% highlight java %}
+public enum DaysOfWeek {
+ 
+    SUNDAY ("Domingo"),
+    MONDAY ("Segunda-feira"), 
+    TUESDAY ("Terça-feira"), 
+    WEDNESDAY ("Quarta-feira"), 
+    THURSDAY ("Quinta-feira"), 
+    FRIDAY ("Sexta-feira"), 
+    SATURDAY ("Sábado");
 
-Durante a *planning* rascunhei algo mais ou menos da seguinte maneira: crio uma interface onde irá retornar as listas de pedidios, crio um enum com os tipos e no construtor de cada tipo de pedido eu coloco uma descrição e qual classe irá retornar a lista de pedidos.
+    private String nameInPortuguese;
+
+    public DaysOfWeek(String nameInPortuguese){
+        this.nameInPortuguese = nameInPortuguese;
+    }
+
+    public String getNameInPortuguese(){
+        return this.nameInPortuguese;
+    }
+}
+{% endhighlight %}
+
+Com isso podemos ter a seguinte chamada:
+{% highlight java %}
+System.out.println(DaysOfWeek.TUESDAY.getNameInPortuguese());
+{% endhighlight %}
+
+E a saída será:
+
+{% highlight java %}
+Terça-feira
+{% endhighlight %}
+
+E o construtor pode receber vários argumentos, e de qualquer tipo, seja primitivo ou não.
+
+Então... dá para fazer umas coisas bem legais :)
+
+A partir de agora vou usar exemplos e o código será didático, sem usar teste unitário, mock de dados, tabela, etc. A intenção é de mostrar apenas exemplos em código mesmo.
+
+Além disso, vamos pensar em um desenvolvimento de um projeto que gera pedidos ao departamento responsável: crio uma interface onde irá retornar as listas de pedidios, crio um enum com os tipos e no construtor de cada tipo de pedido eu coloco uma descrição e qual classe irá retornar a lista de pedidos.
 
 Meio confuso, mas a implementação é a seguinte:
 
@@ -144,8 +176,6 @@ A mágica acima possibilita fazer a seguinte invocação:
 {% highlight java %}
     List<Order> list = OrderType.TRAVEL.getInterfaceOrderData().get();
 {% endhighlight %}
-
-Era isto que eu estava em mente quando fiz a pontuação da funcionalidade.
 
 Finalizando o exemplo, as duas funcionalidades serão representadas pela seguinte interface:
 
@@ -226,15 +256,11 @@ E o retorno do método teríamos:
 }
 {% endhighlight %}
 
-Mas quando cheguei no C# para fazer, na intuição de usar a mesma técnica do enum... dei com os burros na água.
-
-Caso queira ver todo o código acima, clique [aqui](https://github.com/rafael-rfp/java-enum "código no github"){:target="_blank"}
-
-Enum no C#
-----------
-
-Como implementei no C#
-----------------------
+Caso queira ver todo o código acima, clique [aqui](https://github.com/oindiao/java-enum "código no github"){:target="_blank"}
 
 Conclusão
 ---------
+
+Enum é uma das classes mais poderosas do Java. Ultra flexível e que resolve muitos problemas. E não é atoa que muitos *Design Patterns* usam Enum para serem aplicados, como acima, o *Strategy Pattern*, e também é possível usar no *Chain of Responsability*.
+
+Procure saber mais sobre Enum e Design Patterns, é só emoção e redução de "mal cheiro".
