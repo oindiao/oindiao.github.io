@@ -5,9 +5,9 @@ date:   2020-09-21 06:00:00 -0300
 categories: comédia
 ---
 
-Tempos atrás presencial a seguinte cena:
+Tempos atrás presenciei a seguinte cena:
 
-Uma mãe estava passeado com uma criança (pra andar desequilibrado, n devia ter mais que um ano) e um cachorro. O chão era de terra e mãe, ignorando a filha (comendo terra, chupando pedra, cheirando cocô), não deixava o "bebê" cachorro passar a bunda na terra.
+Uma mãe estava passeando com uma criança (pra andar desequilibrado, n devia ter mais que um ano) e um cachorro. O chão era de terra e mãe, ignorando a filha (comendo terra, chupando pedra, cheirando cocô), não deixava o "bebê" cachorro passar a bunda na terra.
 
 "Não bebê, não faz isso, vai ser machucar!"
 
