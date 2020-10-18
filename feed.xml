@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog do Indião</title>
+    <description>Um lugar para escruvinhar uns trem</description>
+    <link>https://oindiao.github.io//</link>
+    <atom:link href="https://oindiao.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 17 Oct 2020 23:55:47 -0300</pubDate>
+    <lastBuildDate>Sat, 17 Oct 2020 23:55:47 -0300</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Manual de sobrevivência em War Room</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2020-09-24/header.jpg&quot; alt=&quot;Brinquedos de soldados de guerra em um fundo branco&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;War room: várias pessoas, de diferentes lugares e áreas, estão reunidos para resolver um problema.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-24/01.jpg&quot; alt=&quot;Diversas pessoas em seus computadores, algumas de pé, representando uma war room.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Em TI geralmente é projeto atrasado, mas podem ser problemas críticos, como lentidão, estouro de memória nos servidores, estouro do banco de dados, ataque hacker, problemas de segurança. A maioria que eu participei foram por projetos atrasados.&lt;/p&gt;
+
+&lt;p&gt;Pode parecer bonita a frase “todos focados em um único objetivo”, mas não é: um lugar em que a pressão domina o ar. Todos que estão ali vão estar sendo cobrados por algo, e numa frequência absurda: 15 em 15 minutos, hora em hora, meia em meia hora.. e assim vai.&lt;/p&gt;
+
+&lt;p&gt;“Quanto tempo vc entrega?”, “Precisa de ajuda?”, “Por que  tá demorando tanto? Dá para ser mais rápido? Fulano, ajuda aqui o cara a andar mais rápido”, “Começa a fazer certo para gnt ir embora”, “Ao invés de ficar digitando, liga para a pessoa, parece que não pensa!”, “Tem alguém mais competente que você para nos ajudar?”, “Chama o Ciclano, ele resolve mais rápido que você”, “Se você não está fazendo nada, vai pegar um café para gente”. Essas são algumas frases que eu ouvi ou sendo ditas para mim ou para outras pessoas na mesa. Não é um clima agradável. Para a empresa, todos estão focados em resolver o problema. Para as pessoas, é se livrar daquele problema e voltar a ter uma vida.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-24/02.jpg&quot; alt=&quot;Diversas pessoas em seus computadores, algumas de pé, representando uma war room.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Muitas empresas já têm suas salas de war room, sejam tematizadas, sejam apenas na plaquinha (trabalhei em uma empresa em que as salas / departamentos tinham nomes de lugares da Itália… O war room se chamava Vesúvio), porque sabem que ela é um mal necessário. É como se fosse uma cela na cadeia e você uma pessoa que trabalha lá dentro: você não quer ficar em uma cela.&lt;/p&gt;
+
+&lt;p&gt;Então, pensando nesse clima gostoso e divertido de uma war room, e depois de ter passados por várias sessões dentro de uma, vou deixar algumas dicas para sobreviver dentro de uma. Sobreviver mesmo, porque ali não é vida. É guerra.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;1) Seja proativo:&lt;/strong&gt; por mais que isso seja um requisito de vagas de emprego, que sempre é dito para manter, ou conseguir, um emprego, dentro de uma war room é mais que necessário, pois se você esperar o problema chegar até você, parabéns! Você acaba de ganhar um alvo na testa e todos estão com uma arma apontada para sua pessoa. Tente antecipar possíveis problemas das soluções que estão propondo, seja proativo em falar “isso vai dar certo”, “talvez aquilo não dê certo”, “vamos testar essa hipótese agora, pois depois não vai dar tempo”.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;2) Quando for afirmar algo, tenha certeza absoluta do que está dizendo:&lt;/strong&gt; se você falar “implementei essa lista aqui, ela é mais performática”, tenha absoluta certeza disso. O melhor mesmo é testar e provar que realmente aquilo está certo. Do contrário, não tenha medo de dizer “Não sei, vou ter que pesquisar um pouco”.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;3) Seja sincero e verdadeiro:&lt;/strong&gt; se você mentiu durante toda sprint/projeto, provavelmente a culpa é sua por terem criado a war room. Não minta em hipótese alguma ali dentro, pois sua mentira pode custar algumas madrugadas sua e de todos ali dentro, além de que você será demitido quando acabar todo o stress. Mentira tem vida curta, lembre-se disso.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;4) Tenha senso de urgência:&lt;/strong&gt; dê prioridade ao que é prioridade. Fale o que é prioridade, do seu ponto de vista. Não é apavorar, mas sim falar com clareza o que realmente é urgente. Se você precisa de algum acesso, ou alguém que tenha aquele acesso (acesso ao root, ao admin do sistema, ao sysadmin do banco) e ser algo de extrema necessidade, fale “Eu preciso do Fulano que tem acesso ao root, pede para ele vir aqui AGORA, SE NÃO A ENTREGA VAI ATRASAR”. Em War Room geralmente vai ter alguém que vai conseguir trazer essa pessoa, ou até mesmo dar esse acesso a você.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;5) Seja resolutivo:&lt;/strong&gt; conheça bem a ferramenta / framework / biblioteca que está dando problemas e resolva o problema que está gerando pelo uso da mesma. E, às vezes, é nesse momento que a gambiarra rola solta (variáveis globais, usuario e senha chumbados, arquivos de configuração forçados em classes, etc) e, pasmem, são ultra bem vistos! Se você está vendo uma gambiarra em algum código antigo possivelmente ele nasceu em uma war room. Mas se souber realmente que está fazendo e ter conhecimento, escolha sempre esse caminho. Gambiarras tendem a dar dor de cabeça no futuro. Seus conhecimentos serão postos à prova ali.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;6) Seja gente boa:&lt;/strong&gt; tá todo mundo nervoso, irritado, cansado e você vai ser o chatão de não ajudar em algo, de não dar a mão amiga para auxiliar o colega, de ficar só reclamando, de ficar desmoralizando o time? Se for, peça demissão ou peça para ser demitido, por favor. Já deve ser um saco trabalhar com você durante a semana, então é 100x pior na war room. Seja uma pessoa legal, que está ali para ajudar a dar a solução. Seja aquela pessoa que chama o outro no particular e fala “olha, eu vi isso aqui e talvez dê erro, vamos ver juntos?”. Se você é líder/gerente/chefe esse é o momento de ser o líder legal, aquele que traz café, que ao mesmo tempo que faz pressão mas pergunta se pode fazer alguma coisa para ajudar, escutar a reclamação do fulano.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;7) Faça o feijão com arroz:&lt;/strong&gt; antes de reclamar que algum serviço tá fora, banco de dados caiu, que o usuário da aplicação não funciona, faça o teste de conexão sem ser pelo seu código. Às vezes fazer o feijão com arroz pode provar que você está esquecendo de algo no seu código.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8) Postura firme:&lt;/strong&gt; se notar que se subir algo vai dar merda, invoque o espírito do capitão Nascimento e fala: NÃO VAI SUBIR NINGUÉM! E ao falar, proponha a solução. Falar por falar não te leva a nenhum lugar.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;9) Tenha paciência:&lt;/strong&gt; respire fundo mil vezes antes de mandar alguém catar coquinho, não arranje brigas desnecessárias. As pessoas tendem a ficar chateadas por muito tempo e não esquecem fácil de alguma ofensa, principalmente em war room.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;10) E se alguém mandou você catar coquinho:&lt;/strong&gt; tenta entrar por um ouvido e sair pelo outro. Depois você conversa com a pessoa sozinha, ou com seu chefe sobre isso.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;11) Não fique comendo só “besteira”:&lt;/strong&gt; pizza todos os dias, refrigerante no almoço e energético de noite… uma hora seu corpo não vai aguentar.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;12) Não fique tenso o tempo todo:&lt;/strong&gt; tá liberado fazer uma piadinha, dar uma risada, olhar o insta para distrair. Mas só faça quando for o momento, pois em momentos errados pode piorar a situação toda.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;13) Por último e mais importante:&lt;/strong&gt; tente tirar um tempo para descansar após uma war room. Sério. Meio utópico, mas às vezes sair mais cedo, ou desligar o notebook no final de semana, até mesmo o celular, para aproveitar um lazer, é necessário. E se for necessário, faça algumas sessões de terapia, massagens e coisas que te dão prazer, para tirar um pouco do stress todo que é gerado.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Esses são meus dois centavos para essa situação. Falei um pouco ai em cima muito do que eu acredito e o que deu certo para mim em tantos anos de consultoria e participando de war room’s.&lt;/p&gt;
+
+&lt;p&gt;Espero que ajude.&lt;/p&gt;
+
+&lt;p&gt;[]’s&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Sep 2020 23:58:47 -0300</pubDate>
+        <link>https://oindiao.github.io//manual-sobrevivencia-war-room/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//manual-sobrevivencia-war-room/</guid>
+        
+        
+        <category>profissional</category>
+        
+      </item>
+    
+      <item>
+        <title>Clownmédia - Mãe, filha e o cachorro</title>
+        <description>&lt;p&gt;Tempos atrás presenciei a seguinte cena:&lt;/p&gt;
+
+&lt;p&gt;Uma mãe estava passeando com uma criança (pra andar desequilibrado, n devia ter mais que um ano) e um cachorro. O chão era de terra e mãe, ignorando a filha (comendo terra, chupando pedra, cheirando cocô), não deixava o “bebê” cachorro passar a bunda na terra.&lt;/p&gt;
+
+&lt;p&gt;“Não bebê, não faz isso, vai ser machucar!”&lt;/p&gt;
+
+&lt;p&gt;Essa frase foi pro cachorro, e não para a criança.&lt;/p&gt;
+
+&lt;p&gt;Então alguns diálogos vieram a mente:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Mãe, tô indo na casa da Maria com minhas amigas.&lt;/p&gt;
+
+&lt;p&gt;_ Leva sua irmã!&lt;/p&gt;
+
+&lt;p&gt;_ Mas ela fica latindo mt lá na casa…&lt;/p&gt;
+
+&lt;p&gt;_ Se ela não for, vc não vai!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Pai, quero estudar na escola particular.&lt;/p&gt;
+
+&lt;p&gt;_ Filha, agora não podemos, estamos apertados e seu irmão tá treinando muito.. O Coach dele falou que jajá ele vai ganhar a Pedigree Cup.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Mãe, hoje eu ganhei nota 10 por resolver todas as contas de matemática!&lt;/p&gt;
+
+&lt;p&gt;_ Ah, legal. Mas você viu o Yuri? Agora ele pega a bolinha e trás de volta! Não é um gênio?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Pai, a professora falou p eu fazer um curso de inglês e espanhol.&lt;/p&gt;
+
+&lt;p&gt;_ Mas você não entende nem que sua irmã fala, imagina outra língua?&lt;/p&gt;
+
+&lt;p&gt;_ Hã? Mas ela é um cachorro…&lt;/p&gt;
+
+&lt;p&gt;_ Cachorro não, sua irmã!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Bom, agora vamos ler o testamento: &lt;em&gt;“Toda forturna ficará para Caramelo”&lt;/em&gt;… Onde ele está?&lt;/p&gt;
+
+&lt;p&gt;_ Ah, acabou de sair correndo, latindo para os pombos…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Filha, por favor, tire seu irmão da cadeia, você é uma advogada de respeito!&lt;/p&gt;
+
+&lt;p&gt;_ O que o Salsicha fez?&lt;/p&gt;
+
+&lt;p&gt;_ Ele comeu o papagaio do Jorge, aí ele chamou o canil…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ AU AU AU AU AU !&lt;/p&gt;
+
+&lt;p&gt;_ Não! Você não pode culpar a Valetina por isso, Thor! Ela ainda não tem dente, como ela comeria toda sua ração?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;_ Filho, o sr Manoel disse que você mordeu a perna dele!&lt;/p&gt;
+
+&lt;p&gt;_ COMO ASSIM? Não fui eu, foi o noso doguinho&lt;/p&gt;
+
+&lt;p&gt;_ Mas ele disse que foi o filho mais feio que fez isso…&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Sep 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//clownmedia-mae-filha-cachorro/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//clownmedia-mae-filha-cachorro/</guid>
+        
+        
+        <category>comédia</category>
+        
+      </item>
+    
+      <item>
+        <title>Swagger: Exportando uma collection</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/01.png&quot; alt=&quot;Logo do swagger: círculo verde, com três pontos entre chaves { }. Depois está escrito Swagger.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Postman, Insomnia, Soap Ui e outros programas que são usados para realizar chamadas em API Rest têm uma opção de importar arquivos, ou url’s, vindos do Swagger, ou de outras bibliotecas de documentação, e assim minimizando erros de copiar/colar do swagger, além de ser mais rápido que criar todas as chamadas.&lt;/p&gt;
+
+&lt;p&gt;Geralmente essa url fica em &lt;strong&gt;&lt;em&gt;/v2/api-docs&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/02.png&quot; alt=&quot;Print do título da tela do swagger, com destaque em /v2/api-docs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se abrirmos esse link do exemplo, veremos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/03.png&quot; alt=&quot;Conteúdo da página /v3/api-docs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta conteúdo no formato Json contém toda a documentação do Swagger. Essa documentação segue um padrão, o &lt;a href=&quot;https://www.openapis.org/&quot; title=&quot;Open API&quot; target=&quot;_blank&quot;&gt;Open API&lt;/a&gt; e, assim, as ferramentas que fazem requisições em API Rest conseguem importar, sem problema algum.&lt;/p&gt;
+
+&lt;p&gt;Para API de exemplo, usarei uma API desenvolvida para o curso de &lt;em&gt;DTAR&lt;/em&gt;, &lt;a href=&quot;https://hotmart.com/product/descomplicando-testes-de-api-rest&quot; title=&quot;Descomplicando testes de API Rest.&quot; target=&quot;_blank&quot;&gt;Descomplicando testes de API Rest.&lt;/a&gt;, ministradas pelo Antonio Montanha e Júlio de Lima, que se encontra no repositório do GitHub abaixo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/AntonioMontanha/gerenciador-viagens&quot; title=&quot;Gerenciador Viagem&quot; target=&quot;_blank&quot;&gt;Gerenciador Viagem&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Usando o Postman como exemplo, vamos fazer a importação.
+Na tela de &lt;strong&gt;&lt;em&gt;Import&lt;/em&gt;&lt;/strong&gt; (&lt;strong&gt;&lt;em&gt;File -&amp;gt; Import&lt;/em&gt;&lt;/strong&gt; ou na tela mesmo, que tem um botão &lt;strong&gt;&lt;em&gt;Import&lt;/em&gt;&lt;/strong&gt;), clicar na aba Link:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/04.png&quot; alt=&quot;Tela de import do Postman, na aba link&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Agora coloque a url completa do &lt;strong&gt;/v2/docs&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/05.png&quot; alt=&quot;Tela de import com a url do /v2/api-docs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Depois clicar em &lt;strong&gt;&lt;em&gt;Continue&lt;/em&gt;&lt;/strong&gt;. Após isso, ira aparecer uma tela para &lt;strong&gt;&lt;em&gt;double-check&lt;/em&gt;&lt;/strong&gt;, com formatação da identação, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/06.png&quot; alt=&quot;tela após clicar em Continue, para double-check&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Agora clique em &lt;strong&gt;&lt;em&gt;Import&lt;/em&gt;&lt;/strong&gt;. Assim, todo esquema é importado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/07.png&quot; alt=&quot;Tela do postman com a collection importada&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-14/08.png&quot; alt=&quot;Um post da collection aberta no postman&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pronto. Sua vida facilidade ao realizar requisições e testes em APIs Rest.
+Como falado, esse exemplo foi usando Postman, mas outros programas também possuem essa funcionalidade.&lt;/p&gt;
+
+&lt;p&gt;Dê uma procurada no &lt;a href=&quot;https://wwww.google.com.br&quot; title=&quot;Google&quot; target=&quot;_blank&quot;&gt;Google&lt;/a&gt; como fazer essa importação para sua ferramenta favorita.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 14 Sep 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//swagger-exportando-uma-collection/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//swagger-exportando-uma-collection/</guid>
+        
+        
+        <category>programação</category>
+        
+      </item>
+    
+      <item>
+        <title>De dev para QA: por quê?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2020-09-01/01.png&quot; alt=&quot;Um rato Developer pergutando &amp;quot;How can I make it?&amp;quot; e o outro rato &amp;quot;Tester&amp;quot; perguntando &amp;quot;How can I break it?&amp;quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bom, tive a sorte de nascer em uma familia que me deu apoio e condições para que eu pudesse escolher minha profissão, então desde os 16 anos estava envolvido com a área de TI, começando em curso técnico de informática, aqueles que ensinam a programar, depois sendo estagiário de manuteção, balconista de lan house, analista de suporte e, aos 21 anos, ir para uma empresa de programação. Já passei por mais de 10 clientes e 25 projetos ao longo dos anos. Então um pouco de experiência eu tenho.&lt;/p&gt;
+
+&lt;p&gt;Mas por que mudar de área de atuação? Bom, antes de responder isso, primeiro eu tenho que mostrar meu motivo de ser programador.&lt;/p&gt;
+
+&lt;h2 id=&quot;curiosidade&quot;&gt;Curiosidade&lt;/h2&gt;
+
+&lt;p&gt;Ah, a curiosidade… ela que me fazer querer saber como funcionavam os softwares mostrados na tv, como que funcionava o rádio do Telekid do Castelo Ra-Tim-Bum, como que eram feitos os vários conteúdos do X-Tudo, Gato Zap, Olho Vivo, Planeta Terra, Globo Reporter, como que a Pokedex funcionava por debaixo dos panos, como que criava um código que meu digimon digievoluísse, como que a Lex em Jurassic Park fechou as portas usando um computador?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-09-01/02.jpeg&quot; alt=&quot;Cena do Jurassik Park onde Lex está sentada e olhando para um computador, falando “It’s a UNIX system. I know this.””&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Além disso, a curiosidade me fez querer entender o motivo/causa/razão de eu estar fazendo aquele código.&lt;/p&gt;
+
+&lt;p&gt;E, por fim, ela me despertou o lado mais investigativo, tipo detetive mesmo, e assim cheguei em Sherlock Holmes. Esse personagem da ficção me despertou uma habilidade, que treinei exastivamente: olhar fora da caixa. O que pode dar certo? E o errado? E se tal coisa parar de funcionar?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tá, ok. Então por que mudar de área de atuação? Por que ir para testes? Por que ficar testando ao invés de programando?&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;frustraes&quot;&gt;Frustrações&lt;/h2&gt;
+
+&lt;p&gt;Quantas vezes eu programei algo sem entender o motivo? Quantas vezes eu escutei “só faz” ? Quantas vezes eu escutei “você é pago para fazer e não para entender” ? Fazer por fazer nunca foi algo que gostei. Eu seria um péssimo soldado.&lt;/p&gt;
+
+&lt;p&gt;Além disso, sempre que levanto as questões do “e se” em reuniões de alinhamento, sou visto como o chato. Não que eu ligue. Mas sempre é assim: o chato, o que implica sempre, o que acha erro onde tava tudo planejado, o que faz mais perguntas que devia.&lt;/p&gt;
+
+&lt;p&gt;Ter um olhar fora da caixa, ver problemas antes deles acontecerem e ficar de mãos atadas me frustra. Como me frusta. Me deixa chateado e triste.&lt;/p&gt;
+
+&lt;p&gt;Pensei em sair do desenvolvimento de software, me tornar cozinheiro, scrum master, analista de negócio, gerente, ir pra devops, etc. Mas… eu gosto de programar… por mais que me frustre, eu ainda gosto muito de programar.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mas calma lá… se você quer programar, por que ir pra QA?&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;por-que-mudar&quot;&gt;Por que mudar?&lt;/h2&gt;
+
+&lt;p&gt;Simples: &lt;strong&gt;porque gosto de programar, entender mais afundo o que estou fazendo, entender sobre regras de negócio, ver possíveis problemas antes de codificar, levantar questões em toda reunião e ser curioso.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A área de testes me traz esse conjunto da obra: conseguir ter um olhar mais crítico sobre todo sistema e escrever código de como analisar esses pontos críticos, sejam esses códigos para automação, performance, segurança, infraestrutura, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;conselhos-pra-quem-quer-mudar-pra-qa&quot;&gt;Conselhos pra quem quer mudar pra QA&lt;/h2&gt;
+
+&lt;p&gt;Eu estou buscando o caminho mais fácil: pegar o que já conheço e ir agregando conhecimento em testes. Hoje estou como programador backend e o que mais uso é Java. Então comecei revendo TDD. Desde teste unitário aos testes de componentes.&lt;/p&gt;
+
+&lt;p&gt;Listinha do que eu li e vi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Livros do &lt;strong&gt;Maurício Aniche&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.casadocodigo.com.br/products/livro-tdd&quot; title=&quot;Test-Driven Development: Teste e Design no Mundo Real&quot; target=&quot;_blank&quot;&gt;Test-Driven Development: Teste e Design no Mundo Real&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.casadocodigo.com.br/products/livro-testes-de-software&quot; title=&quot;Testes automatizados de software: Um guia prático&quot; target=&quot;_blank&quot;&gt;Testes automatizados de software: Um guia prático&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://sttp.site/&quot; title=&quot;Software Testing: From Theory to Practice&quot; target=&quot;_blank&quot;&gt;Software Testing: From Theory to Practice&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Curso na Udemy:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.udemy.com/course/testes-unitarios-em-java/&quot; title=&quot;Testes unitários em JAVA: Domine JUnit, Mockito e TDD&quot; target=&quot;_blank&quot;&gt;Testes unitários em JAVA: Domine JUnit, Mockito e TDD&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cursos do Júlio de Lima:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://hotmart.com/product/descomplicando-testes-de-api-rest&quot; title=&quot;Descomplicando testes de API Rest.&quot; target=&quot;_blank&quot;&gt;Descomplicando testes de API Rest.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://hotmart.com/product/treinamento-de-testes-de-software-para-iniciantes&quot; title=&quot;Treinamento de Testes de Software para Iniciantes&quot; target=&quot;_blank&quot;&gt;Treinamento de Testes de Software para Iniciantes&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;concluso&quot;&gt;Conclusão&lt;/h2&gt;
+
+&lt;p&gt;E como sei que estou no caminho certo? Bom, estou feliz demais fazendo essa transição, algo que eu não sentia desde 2012, no estágio de programação. E, também, por uma frase que o líder técnico me disse quando estavámos falando sobre a transição:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Se você é chato com a gente, imagina contra.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 07 Sep 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//dev-para-qa-por-que/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//dev-para-qa-por-que/</guid>
+        
+        
+        <category>profissional</category>
+        
+      </item>
+    
+      <item>
+        <title>Clownmédia - Piscina no planalto</title>
+        <description>&lt;p&gt;No dia 24 de abril de 2020, 198273912739817239º dia de quarentena, tivemos a live das lives: Moro, então super ministro da justiça, ordem e progresso, pediu as contas e deu um desabafo, parecendo aquele seu ex que ficou bêbado e ligou para desabafar. No mesmo dia o presidanta da republica, Jair messias (“m” minúsculo mesmo) Bolsonaro, que até aquele momento considerava Moro seu super amigo, ficou titi e fez outra live, para mostrar o quão chateado estava com suas amargas palavras.&lt;/p&gt;
+
+&lt;p&gt;Nessa resposta, Bolsonaro fala, além de outras pérolas, que para ajudar a economia brasileira pediu para desligar o aquecedor da piscina olímpica do Palácio do Planalto.&lt;/p&gt;
+
+&lt;p&gt;Fiquei pensando, no momento em que ele fala isso, na reação dos ex-presidentes.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Michelzinho Temer, filho de Michel Temer, dá um soco nas costelas do pai e diz:&lt;/p&gt;
+
+&lt;p&gt;_ Paaaai, tinha uma piscina olímpica e nunca me levou lá? Tô triste com isso, meus amigos da escolas iam pirar!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temer&lt;/strong&gt; responde:&lt;/p&gt;
+
+&lt;p&gt;_ Meu filho, eu não sei onde se encontra tal artefato nas instalações de nossa antiga casa.&lt;/p&gt;
+
+&lt;p&gt;Ficou com isso na cabeça enquanto via o atual presidente soltar cada vez mais pérolas. “Parece a Dilma falando”, pensou. E assim resolveu ligar para Dilma, para tirar a curiosidade de onde ficava a tal piscina.&lt;/p&gt;
+
+&lt;p&gt;Dilma, ao ver a ligação, fica imaginando “será que o filho da puta vai declamar uma poesia do quanto ele ficou triste por não participar do atual governo?”. E atende.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Alô?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temer:&lt;/strong&gt; _ Oi Dilma, tudo bom?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Não sabia que na Transilvania tinha celular e que dava para fazer ligação internacional.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temer&lt;/strong&gt; (que não entendeu a piada): _ Ah não, estou em São Paulo. Olha só, vc está vendo o discurso do Jair?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Sim e vcs me sacaneando sobre a saudação da mandioca. Ele tá no jardim de infância?!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temer&lt;/strong&gt; (que não entendeu a piada de novo): _ Não, ele é ex-capitão do mat… exército, então já passou dessa época.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ O que vc quer?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temer:&lt;/strong&gt; _ Bom, eu gostaria de saber onde que fica a tal piscina, pois Michelzinho me deu um golpe nas costela e…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Dói né, levar um golpe…&lt;/p&gt;
+
+&lt;p&gt;Silêncio ensurdecedor por 1 munuto.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Bom, não lembro exatamente onde fica, lembro de oferecer uma festa aos companheiros que estocavam vento, que salvaria nossa nação..&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Temer:&lt;/strong&gt; _ É, prefiro ouvir suas pérolas do que o mugido desse maluco. Bom, se lembrar onde que fica, me manda uma mensagem, por favor?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Pode deixar.&lt;/p&gt;
+
+&lt;p&gt;Dilma, que também ficou encucada com a localização da tal piscina, resolve ligar para Lula.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Alô companheira! Como estão as coisas?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Saudações ao verdadeiro herói na nação.&lt;/p&gt;
+
+&lt;p&gt;Ficaram 13 minutos conversando sobre PT, sindicatos, cruzado de esquerda, golpe de direita, entre outras coisas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Companheiro, estou com uma dúvida: onde raios fica essa tal piscina que o presitonto falou?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Pois então companheira, eu também não sei. Se eu soubesse não ia querer ir para sítio nenhum, tão pouco para praia. Uma piscina grande dessas ao lado de casa? Ia fazer churrasco todo final de semana. Eu vou ligar para o Fernandinho, acho que ele sabe.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Fernandinho? Beira-Mar? Companheiro, isso é perigoso, já basta a Odebréchi, agora Beira-Mar…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Mar, praia, essas coisas, já me deram muita dor de cabeça. Mas não é dele que eu to falando, é do FHC.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dilma:&lt;/strong&gt; _ Nosso novo companheiro de esquerda?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Sim, mas ele está a nossa direita, mas na esquerda.&lt;/p&gt;
+
+&lt;p&gt;A ligação caiu, pois Dilma desmaiou de tanto pensar nesse paradoxo: &lt;em&gt;direita na esquerda?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lula acha estranho a queda da ligação, tenta falar com a companheira mas sem sucesso. Então liga para o novo companheiro.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Companheiro esquerdista! Como você está?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Oi… Companheiro? É, ainda é difícil falar isso, hahaha. Estou bem, parecendo que estou em uma cela de tão preso dentro de casa que estou! E vc?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Ah, eu já estou acostumado a estar preso…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC&lt;/strong&gt;, constrangido por ter esquecido disso: _ Hahaha… é… rs… Bom, o que vc deseja?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Então companheiro, eu gostaria de saber onde que fica a tal piscina olímpica que esse [&lt;em&gt;13 “elogios” aqui&lt;/em&gt;] falou.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Já vi discursos da pré escola serem mais eloquentes, mas não falo nada pq tenho medo de me engavetarem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Você com medo de engavetamento?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC&lt;/strong&gt; (constrangido, de novo): _ Hahaha… Mas então, eu não lembro dessa piscina, o que eu lembro foi que trocaram o aquecimento, de energia elétrica para solar.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Sério? Então nem gastava dinheiro com energia elétrica?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Sim. Talvez ele queira economizar o sol, vai saber… Mas eu não sei onde fica não, pois eu era atleta e iria utilizar.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lula:&lt;/strong&gt; _ Então vc tem histórico de atleta? Isso não pode ser real.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ É sim, tanto quanto meu plano hahaha. Mas companheiro, eu vou ver se o Collor sabe, vai que ele lembra. Ai te ligo.&lt;/p&gt;
+
+&lt;p&gt;FHC liga para seu xará, Fernando Collor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Xará! Como vai?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ Xará! Vou bem e vc?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Estou bem. Está assistindo o discurso?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ Discurso de uma criança da pré escola é menos confuso..&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Falei o mesmo para o Lula agora pouco.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ Lula? Falando com vc? Ahhh é… vc é o mais novo esquerdista do Brasil!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ E quem não é, nesse momento.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ Fato. Vc e o Bolsonaro têm muito em comum!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ COMO ASSIM?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ Ambas gestões tiveram um juiz maluco!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Coitado do Lalau…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ Bom, mas diga aí, o que devo essa honrosa ligação?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FHC:&lt;/strong&gt; _ Então, onde que fica essa piscina?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collor:&lt;/strong&gt; _ A localização dela foi me passada em uma carta, mas deixei no elba…&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Apr 2020 23:58:47 -0300</pubDate>
+        <link>https://oindiao.github.io//clownmedia-piscina-planalto/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//clownmedia-piscina-planalto/</guid>
+        
+        
+        <category>comedia</category>
+        
+      </item>
+    
+      <item>
+        <title>Clownmédia - Ouro de tolo</title>
+        <description>&lt;p&gt;Música original:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/wWYVuhgG3Ss?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Pensando um cadiquinho do meu contexto atual, minha versão seria:&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+Eu devia estar contente&lt;br /&gt;
+Porque eu tenho um job&lt;br /&gt;
+Sou um dito programador respeitável&lt;br /&gt;
+E ganho quatro mil bugs por mês&lt;br /&gt;
+&lt;br /&gt;
+Eu devia agradecer ao Bill , Steve e Linus&lt;br /&gt;
+Por ter tido sucesso na vida como analista&lt;br /&gt;
+Eu devia estar feliz Porque consegui comprar&lt;br /&gt;
+Um Core I3&lt;br /&gt;
+&lt;br /&gt;
+Eu devia estar alegre e satisfeito&lt;br /&gt;
+Por programar em Java&lt;br /&gt;
+Depois de ter passado stress por dois anos&lt;br /&gt;
+Programando em PHP&lt;br /&gt;
+&lt;br /&gt;
+Ah, eu devia estar sorrindo e orgulhoso&lt;br /&gt;
+Por ter finalmente analisado aquele log (depois de 24 horas seguidas)&lt;br /&gt;
+Mas eu acho isso uma grande piada&lt;br /&gt;
+E um tanto quanto perigosa&lt;br /&gt;
+&lt;br /&gt;
+Eu devia estar feliz pelos clientes&lt;br /&gt;
+por ter concedido vários legados&lt;br /&gt;
+E concender diversas horas extras&lt;br /&gt;
+Ah, mas que sujeito chato sou eu que não acha nada desafiador &lt;br /&gt;
+Java, C#, PHP, scrum, waterfall, eu acho tudo isso um saco&lt;br /&gt;
+&lt;br /&gt;
+Porque foi tão fácil extrair, extender e extrair&lt;br /&gt;
+E agora eu me pergunto &quot;E daí?&quot;&lt;br /&gt;
+Eu tenho um clown cheio de coisas grandes pra realizar&lt;br /&gt;
+E eu não posso ficar aí na grooming&lt;br /&gt;
+&lt;br /&gt;
+Eu devia estar feliz pelo programador Senior&lt;br /&gt;
+Ter me concedido o dominio&lt;br /&gt;
+Pra hospedar mais uma feature&lt;br /&gt;
+Na AWS, Azure e google&lt;br /&gt;
+E dar lucro aos acionistas&lt;br /&gt;
+&lt;br /&gt;
+Ah!&lt;br /&gt;
+Mas que sujeito chato sou eu&lt;br /&gt;
+Que não acha nada engraçado&lt;br /&gt;
+Ficar na frente do computador 24 horas por dia&lt;br /&gt;
+Eu acho tudo isso um saco&lt;br /&gt;
+&lt;br /&gt;
+É você olhar no espelho&lt;br /&gt;
+Se sentir&lt;br /&gt;
+Um grandessíssimo idiota&lt;br /&gt;
+Saber que é um programador&lt;br /&gt;
+Ridículo, com acesso ilimitado a produção&lt;br /&gt;
+Que só usa dez por cento de sua memória ram&lt;br /&gt;
+&lt;br /&gt;
+E você ainda acredita&lt;br /&gt;
+Que é um tech lead, Scrum Master ou Gerente&lt;br /&gt;
+Que está contribuindo com sua parte&lt;br /&gt;
+Para o nosso belo(?) projeto final&lt;br /&gt;
+&lt;br /&gt;
+Eu é que não me sento&lt;br /&gt;
+No trono de um apartamento&lt;br /&gt;
+Com a boca escancarada&lt;br /&gt;
+Cheia de dentes&lt;br /&gt;
+Esperando a morte chegar&lt;br /&gt;
+&lt;br /&gt;
+Porque longe das paredes &quot;empost-its-tados&quot;&lt;br /&gt;
+Que separam TODO, DOING e DONE&lt;br /&gt;
+No lugar calmo do meu email que &lt;br /&gt;
+Assenta a sombra sonora&lt;br /&gt;
+De um diretor furioso&lt;br /&gt;
+&lt;br /&gt;
+Ah! Eu é que não me sento&lt;br /&gt;
+Numa cadeira gamer&lt;br /&gt;
+Com a coca escancarada acompanhado de pizza&lt;br /&gt;
+Esperando a depressão e a morte chegar&lt;br /&gt;
+&lt;br /&gt;
+Porque longe das paredes &quot;empost-its-tados&quot;&lt;br /&gt;
+Que separam TODO, DOING e DONE&lt;br /&gt;
+No lugar calmo do meu email que &lt;br /&gt;
+Assenta a sombra sonora&lt;br /&gt;
+De um diretor furioso&lt;br /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 09 Feb 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//clownmedia-ouro-de-tolo/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//clownmedia-ouro-de-tolo/</guid>
+        
+        
+        <category>clownmedia</category>
+        
+      </item>
+    
+      <item>
+        <title>Clownmédia - Enzo, o coach anti theft millenium</title>
+        <description>&lt;p&gt;Estava eu, navegando no site da globo.com, quando me deparo com a seguinte manchete:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-02-05/01.jpeg&quot; alt=&quot;Eliminados cedo do BBB dão dicas para não ir ao 1º paredão&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Agora temos pessoas ensinando a não ir ao primeiro paredão do BBB, que foram para o primeiro paredão? Isso tem um nome…. como é que chama mesmo…. é… ah, &lt;strong&gt;COACH&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pensei numa reportagem, bem plausível:&lt;/p&gt;
+
+&lt;p&gt;Jornal: &lt;strong&gt;The Cariokei News&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Destaque na coluna “&lt;strong&gt;&lt;em&gt;Teens com mentalidade Ten&lt;/em&gt;&lt;/strong&gt;”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Como não ser preso de primeira”&lt;/em&gt; por Enzo, milenal preso na primeira tentativa de roubo, dentro das lojas Renner.&lt;/p&gt;
+
+&lt;p&gt;Enzo, coach anti theft millenium, ensina os migxs a não serem pegos no desafio “roube e não seja pego”, praticado por brancos e ricos da cidade de River of January. Ele, que está em prisão domiciliar em sua fazenda de 10 km², nos mostra como foi sua primeira, e única, tentativa de furto.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Buscava uma adrenalina maior do que os remédios e MD que tomo. só isso não estava bastando para my life. Resolvi furtar uma bag na Renner, loja de pobres, pois pensei que se pobres compram lá, logo não teria segurança.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Escrito, redigido e desesperado por Estela.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Feb 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//clownmedia-enzo-o-coach-anti-theft-millenium/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//clownmedia-enzo-o-coach-anti-theft-millenium/</guid>
+        
+        
+        <category>clownmedia</category>
+        
+      </item>
+    
+      <item>
+        <title>Clownmédia - Xerox e cópia de chaves</title>
+        <description>&lt;p&gt;Certa vez, indo ao trabalho, naquele trânsito delícia que São Paulo nos oferece, o ônibus para em frente a uma loja de Xerox.&lt;/p&gt;
+
+&lt;p&gt;Me chamou a atenção pelo seguinte fato:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-02-02/01.jpeg&quot; alt=&quot;Portão de metal de uma loja de xerox, escrito &amp;quot;Xerox&amp;quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-02-02/02.jpg&quot; alt=&quot;Ao lado do portão acima, uma placa informando que se faz cópias de chaves&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mente vazia, oficina da comédia! Surgiram algumas coisas na mente:&lt;/p&gt;
+
+&lt;p&gt;As cópias das chaves são em A4 ou A3?
+Uma cópia de uma carta de amor é uma cópia da chave do coração?
+Se fazem cópias de Chaves, poderiam fazer do Chapolin também.
+Micha de papel funciona?
+Para fazer uma cópia de uma chave inglesa, vai usar qual papel?
+Nesse lugar, um maço de papel é um molho de chaves?&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Feb 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//clownmedia-xerox-de-chaves/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//clownmedia-xerox-de-chaves/</guid>
+        
+        
+        <category>clownmedia</category>
+        
+      </item>
+    
+      <item>
+        <title>Retrospectiva profissional 2019</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2020-01-26/header.jpg&quot; alt=&quot;Relógio retrô com corrente em fundo preto&quot; /&gt;
+&lt;a href=&quot;https://www.pexels.com/photo/retro-clock-on-chain-on-black-background-4082636/&quot; title=&quot;Imagem original&quot;&gt;Imagem original&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Trabalhar com desenvolvimento de software não é somente desenvolver software. E, pela primeira vez em 10 anos de estrada, admiti para mim mesmo que a maioria dos problemas se resolve conversando com as pessoas.&lt;/p&gt;
+
+&lt;p&gt;Imagina só eu ouvir isso em 2009? Eu ia me achar louco! Uai, não faz sentido nenhum: se eu programo, logo pessoas não são necessárias no dia a dia! Só eu e o computador basta…&lt;/p&gt;
+
+&lt;p&gt;Mas não é bem assim. E se fosse assim acho que teria mudado de profissão faz tempo. E isso é outra admissão: eu gosto de pessoas. Não muvucado, não muita gente, não muito perto. Mas gosto do contato com outras pessoas. Poder conversar. Tentar entender o que se passa ali do outro lado. Arriscar uma ajuda. E isso é bom.&lt;/p&gt;
+
+&lt;p&gt;Fora essa excelente descoberta sobre minha pessoa, há outras que quero compartilhar:&lt;/p&gt;
+
+&lt;h2 id=&quot;antes-de-refazer-um-projeto-faa-uma-reforma&quot;&gt;1) Antes de refazer um projeto, faça uma reforma.&lt;/h2&gt;
+
+&lt;p&gt;Peguei um projeto para fazer algumas melhorias, mas resolvi que, ao invés de só focar nas melhorias, eu iria reescrever todo o projeto. Combinei com o cliente sobre essa proposta e foi aceita.&lt;/p&gt;
+
+&lt;p&gt;No começo foi bom, pude colocar em prática tudo que havia estudado no último ano de boas práticas, performance, etc.&lt;/p&gt;
+
+&lt;p&gt;Depois de um certo tempo começaram os problemas: cansaço, desmotivação, muita coisa para fazer além do que esperava, falta de contato com outros profissionais. Isso gerou desmotivação, logo faltou foco, logo…&lt;/p&gt;
+
+&lt;p&gt;Chegou a entrega. Muitos erros na fase de testes. Mas muitos. Listados foram 30 “problemas”, mas nas correções via outros e corrigia. Era bug que não parava mais… tudo que eu queria era um excelente baygon para matar esses bugs, mas não rolava.&lt;/p&gt;
+
+&lt;p&gt;Eis que acontece algo: tenho que mudar de cliente. O projeto já tinha passado da fase de correções e agora era ir para produção.&lt;/p&gt;
+
+&lt;p&gt;Passei “as manhas” para um colega de trabalho e fui para outro cliente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-01-26/01.jpg&quot; alt=&quot;Tirinha com o título: &amp;quot;The Handover&amp;quot;. 1) Um colega informa ao outro, que está na frente do computador: &amp;quot;This is my code&amp;quot; 2) O dono do código fala: &amp;quot;It&#39;s yout problem now&amp;quot; 3) O dono do código fala: &amp;quot;I&#39;m out&amp;quot; 4) O outro fica olhando para o computador&amp;quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.instagram.com/p/B7sY_tPItww/&quot; title=&quot;Post original&quot;&gt;Post original&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mas mesmo passando a bomba relógio para outra pessoa, acompanhei a primeira entrada para produção. Fracasso total. O famoso e temido “rollback”. Pensei “puta merda, o cara que ta arrumandi vai ter mais dor de cabeça que eu pensei, mas deve resolver na próxima”…&lt;/p&gt;
+
+&lt;p&gt;Eu participei de mais dois rollback’s, enquanto o outro colega de mais 3. Um projeto que era para entrar em junho entrou em novembro.&lt;/p&gt;
+
+&lt;p&gt;O pior para mim foi que, depois de um tempo, fui desligado do projeto. Talvez o orçamento do projeto entrou no vermelho e eu tava ficando caro. Não sei, nunca me falaram e também nunca perguntei. Mas com o desligamento outra pessoa cuidou dos bugs, passando stress e raiva pelos meus erros. :/&lt;/p&gt;
+
+&lt;p&gt;No final, ficou a lição: reforme (refatore). Não refaça antes de refatorar.&lt;/p&gt;
+
+&lt;h2 id=&quot;acordo-de-cavalheiros-s-funciona-se-ambas-partes-forem-cavalheiros-ou-damas&quot;&gt;2) Acordo de cavalheiros só funciona se ambas partes forem cavalheiros (ou damas).&lt;/h2&gt;
+
+&lt;p&gt;Sabe aquela frase “um por todos, todos por um”? Ela só dá certo se todos estão no mesmo barco.&lt;/p&gt;
+
+&lt;p&gt;Nesse projeto que eu refiz, também fiz acordo com o cliente, que não foi passado para meus chefes, por se tratar de acordo entre cavalheiros. Uma mão lava a outra, não é mesmo?&lt;/p&gt;
+
+&lt;p&gt;Quando começou a estourar os problemas… o acordo foi pro saco e a maré foi contra mim.&lt;/p&gt;
+
+&lt;p&gt;“isso não era assim”, “não lembro de ter falado”, “faz direito”, “isso não estava alinhado”… foram algumas frases escutei.&lt;/p&gt;
+
+&lt;p&gt;Depois disso, no outro cliente, passei a prestar mais atenção nesse tipo de acontecimento. Resultado: até agora nenhum acordo feito e sem dores de cabeça.&lt;/p&gt;
+
+&lt;h2 id=&quot;v--eventos-workshops-meetup-etc&quot;&gt;3) Vá à eventos, workshops, meetup, etc.&lt;/h2&gt;
+
+&lt;p&gt;Comecei a ler um livro chamado “Introdução à Arquitetura e Design de Software”, dos donos da Caelum / Alura / Casa do código / Hipsters.tech &lt;a href=&quot;https://www.casadocodigo.com.br/products/livro-arquitetura-java&quot; title=&quot;Introdução à Arquitetura e Design de Software&quot; target=&quot;_blank&quot;&gt;Introdução à Arquitetura e Design de Software&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aliás, excelente livro para todo mundo. Maior parte do livro é sobre arquitetura de software, então serve para os profissionais de programação.&lt;/p&gt;
+
+&lt;p&gt;Pois então. Comecei a ler o livro e vi que tinha um curso na Caelum sobre arquitetura de software &lt;a href=&quot;https://www.caelum.com.br/curso-design-arquitetura-de-aplicacoes-java&quot; title=&quot;CURSO PRÁTICAS DE DESIGN E ARQUITETURA DE CÓDIGO PARA APLICAÇÕES JAVA ONLINE&quot; target=&quot;_blank&quot;&gt;CURSO PRÁTICAS DE DESIGN E ARQUITETURA DE CÓDIGO PARA APLICAÇÕES JAVA ONLINE&lt;/a&gt; e resolvi fazer. Todo pimpão e pensando “como eu já sei muito, sou bichão, não vai ser tão bom assim.”&lt;/p&gt;
+
+&lt;p&gt;O curso era aos sábados e, após o primeiro dia de curso, fiquei o domingo em posição fetal e pensando “sou mt inocente”. Havia MUITO assunto que eu não sabia que existia. Ferramentas, técnicas, termos. A partir dali decidi que, além de estudar mais, devia começar a ir à outros eventos.&lt;/p&gt;
+
+&lt;p&gt;Além de aumentar a rede de conhecidos (o tal do networking), ir à eventos, workshops e meetups faz com que sua visão aumente e veja ali soluções para seus problemas no trabalho. Por mais tempo que seja um evento, uma frase, uma palestra, um único momento, pode valer a pena.&lt;/p&gt;
+
+&lt;p&gt;Com isso, desde setembro vou à um evento chamado &lt;a href=&quot;https://www.meetup.com/pt-BR/Agile-Talks-ABC/&quot; title=&quot;Agile Talks ABC&quot; target=&quot;_blank&quot;&gt;Agile Talks ABC&lt;/a&gt;. É um evento de agile? Sim! É um evento que vc sai com vontade de abraças árvores? Não! Discussões saudáveis, onde prevalesce o respeito e a escuta pelo outro. Onde sua opinião pode mudar drasticamente de um determinado assunto. Onde suas palavras são ouvidas por todos. E, desde o primeiro, não faltei a nenhum. Mesmo que, ultimamente, não tenho mais considerado tirar certificação de Scrum Master, mas gosto de ir para ouvir o que outros profissionais da área e que são Scrum Master, ou envolvidos, têm a dizer sobre agile. E também de ir fazer perguntas cabeludas para gerar as discussões saudáveis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-01-26/02.jpeg&quot; alt=&quot;Um roda de pessoas sentadas em volta de mesas, na orde da esqueda para direita: uma mulher de cabelos longos e negros usando óculos e jaqueta de couro azul escuro, uma mulher de cabelos loiros e presos com camisa listrada em preto em branco, homem de cabelo curto e escuro com camiseta preta com mangas douradas, homem de óculos com cabelos curtos e camiseta azul escuro, homem de cabelos loiros e curtos com camiseta amarela, homem de cabelos loiros e curtos com camiseta branca e mangas pretas, homem usando óculos de cabelos escuros e meio longos com camiseta cinza escura, homem de cabelos escuros e curtos com camiseta preta, homem de cabelos castanhos e curtos com camiseta cinza, homem de cabelos escuros e curtos com camiseta cinza clara. Todos estão em volta de mesas, com várias canetas e post&#39;its&amp;quot;. Uma placa em uma porta de vidro escrito: &amp;quot;Bem-vindos ao AGILE ABC Talks&amp;quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.meetup.com/pt-BR/Agile-Talks-ABC/photos/30350587/&quot; title=&quot;Fotos do evento&quot; target=&quot;_blank&quot;&gt;Mais fotos&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;E ir à eventos e afins, me deu uma ideia de ir a outros eventos que não são parte do meu dia a dia  do trabalho.&lt;/p&gt;
+
+&lt;h2 id=&quot;fazer-cursos-e-ir--eventos-fora-do-seu-contexto-de-trabalho-sempre-agrega&quot;&gt;4) Fazer cursos e ir à eventos fora do seu contexto de trabalho sempre agrega.&lt;/h2&gt;
+
+&lt;p&gt;Ficar só na bolha da área profissional é ruim. Muito ruim. A área que escolhemos têm problemas que outras podem já ter resolvido. E ter contato com outros profissionais sempre agrega.&lt;/p&gt;
+
+&lt;p&gt;Oportunidade um freela, oportunidade de conhecer outros lugares, usar ferramentas e técnicas de outras áreas no seu dia-a-dia.&lt;/p&gt;
+
+&lt;p&gt;Então vá fazer curso de clown, culinária, oratória, bordado, etc. Uma frase, um momento, uma oportunidade, pode transformar sua vida profissional. Ou até mesmo transmutá-la.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-01-26/03.jpg&quot; alt=&quot;Logo da Casa do humor, escrito &amp;quot;casa do humor&amp;quot; logo abaixo &amp;quot;improviso, palhaço, standup e o que for&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.casadohumor.com.br/palhaco&quot; title=&quot;Casa do humor&quot; target=&quot;_blank&quot;&gt;Um dos cursos que me mudou profundamente&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Jan 2020 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//retrospectiva-2019/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//retrospectiva-2019/</guid>
+        
+        
+        <category>clownmedia</category>
+        
+      </item>
+    
+      <item>
+        <title>Java: Enum, uma das coisas mais legais que tem</title>
+        <description>&lt;p&gt;Enum facilita bastante a vida. Principalmente no Java, onde enum é um tipo de classe bem flexível e extensível.&lt;/p&gt;
+
+&lt;h2 id=&quot;o-que--umenum&quot;&gt;O que é um Enum?&lt;/h2&gt;
+
+&lt;p&gt;Enum é a representação de uma lista de valores constantes e pré definidos.&lt;/p&gt;
+
+&lt;p&gt;Um exemplo em Java para representar os dias da semana:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/763d4ef197f83a82f1862e89eeadaae7.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Podemos acessar os valores de um enum direto, sem ter que instanciar a classe.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DaysOfWeek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;MONDAY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A saída será:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;MONDAY&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;E como é uma lista, é possível pegar o valor da posição.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DaysOfWeek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;MONDAY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ordinal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A saída será:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// A lista começa em 0, logo MONDAY será 1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Um Enum pode ser utilizado para diversas tarefas, principalmente quando queremos dar nomes mais amigáveis em valores pré-definidos de forma mais simples, como os dias da semana.&lt;/p&gt;
+
+&lt;h2 id=&quot;s-issoaff&quot;&gt;Só isso? Aff…&lt;/h2&gt;
+
+&lt;p&gt;No Java dá para fazer uma coisa bem interessante:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cada valor do enum pode ter um construtor… do próprio enum!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Enum não deixa de ser uma classe como outra qualquer no java, logo podemos ter construtores no enum.
+Exemplo: o Enum de dias da semana poderia ter um construtor que recebe um String, sendo ela o nome traduzido para nosso dialeto:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/97f96fff7d323d5bc3310794b1d40ae5.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Com isso podemos ter a seguinte chamada:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DaysOfWeek&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;TUESDAY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getNameInPortuguese&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;E a saída será:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Terça&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feira&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;E o construtor pode receber vários argumentos, e de qualquer tipo, seja primitivo ou não.&lt;/p&gt;
+
+&lt;p&gt;Então… dá para fazer umas coisas bem legais :)&lt;/p&gt;
+
+&lt;p&gt;A partir de agora vou usar exemplos e o código será didático, sem usar teste unitário, mock de dados, tabela, etc. A intenção é de mostrar apenas exemplos em código mesmo.&lt;/p&gt;
+
+&lt;p&gt;Além disso, vamos pensar em um desenvolvimento de um projeto que gera pedidos ao departamento responsável: crio uma interface onde irá retornar as listas de pedidios, crio um enum com os tipos e no construtor de cada tipo de pedido eu coloco uma descrição e qual classe irá retornar a lista de pedidos.&lt;/p&gt;
+
+&lt;p&gt;Meio confuso, mas a implementação é a seguinte:&lt;/p&gt;
+
+&lt;p&gt;A classe de pedido seria composta pelo requisitante, data de vencimento e o valor.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/bd98725a37b8baa38bc3fb35577d15b8.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;No meu contexto os pedidos poderiam vir de várias fontes de dados. Então para deixar isolado a forma de obter a lista de pedidos, criaria uma interface:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/acf25d2ad0136fc086d5b7c893824e1e.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;E, para cada tipo de pedido que houvesse, implementaria essa interface:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/694867a0c82d01c4b0ded59aed55ae46.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Agora que vem a “mágica” do enum do java: posso colocar no construtor a interface &lt;em&gt;InterfaceOrderData&lt;/em&gt; e em cada enum instanciar as classes que implementam a interface!&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/f3103c3d4d1e0bdb25b38551448400fd.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;A mágica acima possibilita fazer a seguinte invocação:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OrderType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;TRAVEL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInterfaceOrderData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Finalizando o exemplo, as duas funcionalidades serão representadas pela seguinte interface:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/26f5510c52d3b19bb8d37a6e1d8a7cc5.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;O enum OrderTypeDto:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/d233c906ed6574575ffaa3a9fd229235.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Então a implementação do método &lt;em&gt;getListOrderByType&lt;/em&gt; seria algo assim:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/b5c67faac8d2bb179b2db4706f3e7e16.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;E do método &lt;em&gt;getSizeOfType&lt;/em&gt; ficaria:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/oindiao/dd17414f83ecdcaa8bb765441dc2a36f.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Então se chamasse o método &lt;em&gt;getListOrderByType&lt;/em&gt;, passando o tipo &lt;strong&gt;PAYMENT&lt;/strong&gt;, poderia obter uma resposta do tipo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;requester&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Rafael&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;dueDate&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;14/04/2019&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;value&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;150.0&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; 
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;requester&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Carlos&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;dueDate&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;03/12/2019&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+        &lt;span class=&quot;s2&quot;&gt;&amp;quot;value&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;300.6&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;E o retorno do método teríamos:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;PAYMENT&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;PURCHASE&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;TAX&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;TRAVEL&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Caso queira ver todo o código acima, clique &lt;a href=&quot;https://github.com/oindiao/java-enum&quot; title=&quot;código no github&quot; target=&quot;_blank&quot;&gt;aqui&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;concluso&quot;&gt;Conclusão&lt;/h2&gt;
+
+&lt;p&gt;Enum é uma das classes mais poderosas do Java. Ultra flexível e que resolve muitos problemas. E não é atoa que muitos &lt;em&gt;Design Patterns&lt;/em&gt; usam Enum para serem aplicados, como acima, o &lt;em&gt;Strategy Pattern&lt;/em&gt;, e também é possível usar no &lt;em&gt;Chain of Responsability&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Procure saber mais sobre Enum e Design Patterns, é só emoção e redução de “mal cheiro”.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Oct 2019 06:00:00 -0300</pubDate>
+        <link>https://oindiao.github.io//java-enum/</link>
+        <guid isPermaLink="true">https://oindiao.github.io//java-enum/</guid>
+        
+        
+        <category>programação</category>
+        
+      </item>
+    
+  </channel>
+</rss>
